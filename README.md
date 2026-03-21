@@ -1,22 +1,21 @@
-# St. Kizito Technical Institute Enterprise Network Project
+# Project Title
 
-## Overview
-The St. Kizito Technical Institute is implementing a comprehensive enterprise network to support its educational and administrative functions. This project aims to enhance connectivity, improve communication, and provide a robust platform for various educational technologies.
+This project aims to create and maintain an enterprise network for efficient operations and connectivity.
 
-## Features
-- **High-Speed Internet Access**: Providing internet connectivity to all students and staff.
-- **Local Area Network (LAN)**: Establishing a secure and efficient internal network to facilitate communication.
-- **Wireless Connectivity**: Enabling wireless access points across the campus for mobile devices.
-- **Network Security**: Implementing firewalls and security protocols to protect sensitive data.
-- **VLAN Segmentation**: Organizing the network into virtual LANs to improve performance and security.
+## VLAN and Addressing Scheme
 
-## VLAN Addressing Scheme
-- **VLAN 10: Admin Network**  - 192.168.10.0/24
-- **VLAN 20: Student Network** - 192.168.20.0/24
-- **VLAN 30: Faculty Network** - 192.168.30.0/24
-- **VLAN 40: Guest Network** - 192.168.40.0/24
+| Branch   | Department   | VLAN ID | IPv4 Network        | Default Gateway    | IPv6 Prefix             |
+|----------|--------------|---------|---------------------|---------------------|-------------------------|
+| Branch One | HR           | 10      | 192.168.1.0/24      | 192.168.1.1         | fda1:db8:0:1::1         |
+|          | Sales        | 20      | 192.168.1.0/24      | 192.168.1.1         | fda1:db8:0:1::2         |
+|          | IT           | 30      | 192.168.1.0/24      | 192.168.1.1         | fda1:db8:0:1::3         |
+| Branch Two| HR           | 40      | 192.168.2.0/24      | 192.168.2.1         | fda1:db8:0:2::1         |
+|          | Sales        | 50      | 192.168.2.0/24      | 192.168.2.1         | fda1:db8:0:2::2         |
+|          | IT           | 60      | 192.168.2.0/24      | 192.168.2.1         | fda1:db8:0:2::3         |
+| Branch Three| HR         | 70      | 192.168.3.0/24      | 192.168.3.1         | fda1:db8:0:3::1         |
+|          | Sales        | 80      | 192.168.3.0/24      | 192.168.3.1         | fda1:db8:0:3::2         |
+|          | IT           | 90      | 192.168.3.0/24      | 192.168.3.1         | fda1:db8:0:3::3         |
 
-## Project Scenario Details
-The project involves setting up a modern IT infrastructure that includes routers, switches, and wireless access points. The distributed nature of the VLANs will ensure that different groups (administrators, students, and faculty) have isolated network access while sharing the same physical infrastructure. This will enhance security and optimize the network's performance.
+## Additional Information
 
-Additionally, training will be provided for staff and students to effectively use the technology and ensure a smooth transition to the new system.
+This README provides essential information about the VLAN and addressing scheme designed for the company branches.
